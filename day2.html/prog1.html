@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validated Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      border: 2px solid #333;
+      padding: 20px;
+      background-color: #fff;
+      width: 300px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, button {
+      width: 90%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #060000;
+    }
+    textarea{
+        height: 100px;    
+      resize: none; 
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Registration Form</h2>
+
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" 
+           required" 
+           title="Name should only contain letters and spaces">
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Password -->
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" 
+           required 
+           title="Must contain at least one number, one uppercase and lowercase letter, and at least 6 characters">
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select...</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+<!-- Message -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" 
+              required 
+              placeholder="Write your message here..."></textarea>
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
