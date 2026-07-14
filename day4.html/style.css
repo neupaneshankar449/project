@@ -1,0 +1,112 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center horizontally */
+  padding: 20px;
+}
+
+/* Blog post */
+article {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile Card */
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto; /* center horizontally */
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.card .role {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card .bio {
+  height: 60px;          /* fixed height */
+  overflow-y: auto;      /* scrollbar appears if text is too long */
+  font-size: 14px;
+  color: #444;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+aside {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc; /* gray circle */
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+/* Footer */
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+} 
