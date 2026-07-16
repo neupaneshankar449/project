@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">LuxuryShop</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <input type="text" placeholder="Search..." class="search-box">
+      <a href="#" class="icon wishlist" aria-label="Wishlist">♥</a>
+      <a href="cart.html" class="icon cart" aria-label="Cart">🛒</a>
+      <a href="login.html" class="btn login-btn">Login</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Premium Luxury</h1>
+      <p>Shop the latest fashion, electronics, and more.</p>
+      <a href="shop.html" class="btn cta-btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-banner.jpg" alt="Luxury Shopping">
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CATEGORIES ===== -->
+  <section class="categories">
+    <h2>Featured Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">Fashion</div>
+      <div class="category-card">Electronics</div>
+      <div class="category-card">Furniture</div>
+      <div class="category-card">Beauty</div>
+      <div class="category-card">Sports</div>
+      <div class="category-card">Accessories</div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Example Product Card -->
+      <div class="product-card">
+        <span class="badge">-20%</span>
+        <img src="product1.webp" alt="Product">
+        <h3>Wireless Headphones</h3>
+        <p class="brand">Brand: LuxSound</p>
+        <p class="rating">★★★★★</p>
+        <p class="price"><span class="current">$199</span> <span class="old">$249</span></p>
+        <a href="cart.html" class="btn add-cart">Add to Cart</a>
+      </div>
+      <!-- Repeat for 12 products -->
+    </div>
+  </section>
+
+  <!-- ===== PROMOTIONAL BANNER ===== -->
+  <section class="promo-banner">
+    <h2>Summer Sale - Up to 50% Off</h2>
+    <p>Limited time offer. Hurry up!</p>
+    <a href="shop.html" class="btn promo-btn">Shop Now</a>
+  </section>
+
+  <!-- ===== CUSTOMER REVIEWS ===== -->
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <p>"Amazing quality and fast delivery!"</p>
+        <h4>- Sarah K.</h4>
+      </div>
+      <div class="review-card">
+        <p>"Luxury at its finest. Highly recommend."</p>
+        <h4>- James L.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit" class="btn subscribe-btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">TW</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 LuxuryShop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
