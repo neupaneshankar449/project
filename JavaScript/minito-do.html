@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini To-Do List</title>
+</head>
+<body>
+
+    <h2>Mini To-Do List</h2>
+
+    <input type="text" id="task" placeholder="Enter a task">
+    <button id="addBtn">Add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        let button = document.getElementById("addBtn");
+
+        button.onclick = function () {
+            let task = document.getElementById("task").value.trim();
+
+            if (task != "") {
+                let li = document.createElement("li");
+                li.textContent = task;
+
+                document.getElementById("list").appendChild(li);
+
+                document.getElementById("task").value = "";
+            } else {
+                alert("Please enter a valid task!");
+            }
+        };
+    </script>
+
+</body>
+</html>

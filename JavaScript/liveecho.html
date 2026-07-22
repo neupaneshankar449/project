@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Input Echo</title>
+</head>
+<body>
+
+    <h2>Live Input Echo</h2>
+
+    <input type="text" id="name" onkeyup="showText()" placeholder="Your Name">
+
+    <p>Hello  <span id="output"></span></p>
+
+    <script>
+        function showText() {
+            let text = document.getElementById("name").value;
+            document.getElementById("output").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>
