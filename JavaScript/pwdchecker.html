@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker</title>
-    <link rel="stylesheet" href="pwd.css">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <label for="passwordInput">Password:</label>
-        <input type="password" id="passwordInput" placeholder="Enter password...">
-        <p>Strength: <span id="strengthIndicator">Weak</span></p>
+        <h2>Password Checker</h2>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Password"
+        >
+
+        <br><br>
+
+        <button id="toggleBtn">Show Password</button>
+        <button id="themeBtn">🌙 Dark Mode</button>
+
+        <p id="strengthIndicator"></p>
     </div>
 
-    
-<script src="pwd.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
