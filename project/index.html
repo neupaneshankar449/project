@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUXE | Premium Fashion</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                LUXE
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active nav-route"
+                            href="#"
+                            data-page="home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-route"
+                            href="#"
+                            data-page="shop">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-route"
+                            href="#"
+                            data-page="about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-route"
+                            href="#"
+                            data-page="contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= HOME ================= -->
+
+    <section class="page" id="home">
+
+        <!-- Hero -->
+
+        <header class="hero">
+
+            <div class="hero-overlay">
+
+                <div class="container">
+
+                    <div class="hero-content text-center">
+
+                        <h1>Elevate Your Style</h1>
+
+                        <p>
+                            Premium fashion for modern living.
+                        </p>
+
+                        <button
+                            class="btn btn-warning btn-lg"
+                            id="heroShopBtn">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Categories -->
+
+        <section class="container py-5">
+
+            <div class="text-center mb-5">
+
+                <h2>Featured Categories</h2>
+
+                <p>Luxury collections curated for every lifestyle.</p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <i class="bi bi-person"></i>
+                    <h4>Men's Clothing</h4>
+                </div>
+
+                <div class="category-card">
+                    <i class="bi bi-person-heart"></i>
+                    <h4>Women's Clothing</h4>
+                </div>
+
+                <div class="category-card">
+                    <i class="bi bi-gem"></i>
+                    <h4>Jewelry</h4>
+                </div>
+
+                <div class="category-card">
+                    <i class="bi bi-phone"></i>
+                    <h4>Electronics</h4>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Why Choose Us -->
+
+        <section class="container py-5">
+
+            <div class="text-center mb-5">
+
+                <h2>Why Choose LUXE</h2>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <i class="bi bi-award"></i>
+
+                    <h5>Premium Quality</h5>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="bi bi-truck"></i>
+
+                    <h5>Fast Shipping</h5>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="bi bi-credit-card"></i>
+
+                    <h5>Secure Payment</h5>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="bi bi-arrow-repeat"></i>
+
+                    <h5>Easy Returns</h5>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Featured Products -->
+
+        <section class="container py-5">
+
+            <div class="text-center mb-5">
+
+                <h2>Featured Products</h2>
+
+            </div>
+
+            <div
+                class="row g-4"
+                id="featuredProducts">
+
+            </div>
+
+        </section>
+
+        <!-- Newsletter -->
+
+        <section class="newsletter">
+
+            <div class="container text-center">
+
+                <h2>Stay Updated</h2>
+
+                <p>Subscribe for exclusive offers.</p>
+
+                <form
+                    class="row justify-content-center">
+
+                    <div class="col-md-6">
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address">
+
+                    </div>
+
+                    <div class="col-auto">
+
+                        <button
+                            class="btn btn-warning">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- SHOP / ABOUT / CONTACT / MODAL / FOOTER continue in Part 1B -->
+     <!-- ================= SHOP ================= -->
+
+<section class="page d-none" id="shop">
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Shop Collection</h2>
+            <p>Discover premium products.</p>
+        </div>
+
+        <div class="row g-3 mb-4">
+
+            <div class="col-lg-4">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control"
+                    placeholder="Search products...">
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="d-flex flex-wrap gap-2">
+
+                    <button class="btn btn-outline-dark category-btn active"
+                        data-category="all">
+                        All
+                    </button>
+
+                    <button class="btn btn-outline-dark category-btn"
+                        data-category="men's clothing">
+                        Men
+                    </button>
+
+                    <button class="btn btn-outline-dark category-btn"
+                        data-category="women's clothing">
+                        Women
+                    </button>
+
+                    <button class="btn btn-outline-dark category-btn"
+                        data-category="jewelery">
+                        Jewelry
+                    </button>
+
+                    <button class="btn btn-outline-dark category-btn"
+                        data-category="electronics">
+                        Electronics
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <select id="sortSelect" class="form-select">
+
+                    <option value="default">Sort Products</option>
+
+                    <option value="priceLow">
+                        Price : Low to High
+                    </option>
+
+                    <option value="priceHigh">
+                        Price : High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                    <option value="name">
+                        Name (A-Z)
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div
+            id="loadingSpinner"
+            class="text-center my-5">
+
+            <div class="spinner-border text-dark"></div>
+
+        </div>
+
+        <div id="productAlert"></div>
+
+        <div
+            class="product-grid"
+            id="productContainer">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="page d-none" id="about">
+
+    <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <h2>Our Story</h2>
+
+                <p>
+                    LUXE was founded with one purpose:
+                    bringing timeless fashion to modern lifestyles.
+                </p>
+
+                <h3>Mission</h3>
+
+                <p>
+                    Deliver premium quality fashion through
+                    elegant design and exceptional service.
+                </p>
+
+                <h3>Vision</h3>
+
+                <p>
+                    Become one of the world's most admired
+                    luxury fashion brands.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="row g-3">
+
+                    <div class="col-6">
+
+                        <div class="stat-card">
+
+                            <h2>50K+</h2>
+
+                            <p>Happy Customers</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="stat-card">
+
+                            <h2>500+</h2>
+
+                            <p>Luxury Products</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="stat-card">
+
+                            <h2>35+</h2>
+
+                            <p>Countries</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="stat-card">
+
+                            <h2>99%</h2>
+
+                            <p>Satisfaction</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="page d-none" id="contact">
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div id="formAlert"></div>
+
+                <form id="contactForm">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            class="form-control"></textarea>
+
+                    </div>
+
+                    <button
+                        class="btn btn-dark"
+                        type="submit">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div
+    class="modal fade"
+    id="productModal"
+    tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Product Details
+                </h5>
+
+                <button
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div
+                class="modal-body"
+                id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white mt-5">
+
+    <div class="container py-5">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h3>LUXE</h3>
+
+                <p>
+                    Elevate Your Style.
+                </p>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Quick Links</h5>
+
+                <ul class="list-unstyled">
+
+    <li>
+        <a href="#" class="footer-link nav-route" data-page="home">Home</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link nav-route" data-page="shop">Shop</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link nav-route" data-page="about">About</a>
+    </li>
+
+    <li>
+        <a href="#" class="footer-link nav-route" data-page="contact">Contact</a>
+    </li>
+
+</ul>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Contact</h5>
+
+                <p>Email : info@luxe.com</p>
+
+                <p>Phone : +977 9800000000</p>
+
+            </div>
+
+            <div class="col-lg-2">
+
+                <h5>Follow</h5>
+
+                <i class="bi bi-facebook fs-4 me-2"></i>
+
+                <i class="bi bi-instagram fs-4 me-2"></i>
+
+                <i class="bi bi-twitter-x fs-4"></i>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+
+            © 2026 LUXE. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

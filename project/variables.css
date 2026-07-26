@@ -1,0 +1,116 @@
+:root{
+
+    /* Colors */
+
+    --primary:#111111;
+    --secondary:#2c2c2c;
+    --accent:#D4AF37;
+    --background:#F8F8F8;
+    --text:#333333;
+    --white:#ffffff;
+    --border:#e5e5e5;
+
+    /* Radius */
+
+    --border-radius:14px;
+    --border-radius-lg:20px;
+
+    /* Spacing */
+
+    --spacing:1rem;
+    --section-padding:80px;
+
+    /* Shadow */
+
+    --shadow:0 10px 25px rgba(0,0,0,.12);
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+    /* Font */
+
+    --heading-font:"Playfair Display",serif;
+    --body-font:"Poppins",sans-serif;
+
+    /* Container */
+
+    --max-width:1200px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--body-font);
+
+    background:var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+
+    font-family:var(--heading-font);
+
+    color:var(--primary);
+
+}
+
+.page{
+
+    min-height:100vh;
+
+    animation:fade .4s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
